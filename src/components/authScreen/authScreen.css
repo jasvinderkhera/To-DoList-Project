@@ -1,0 +1,40 @@
+.loginPage{
+    background: linear-gradient(to right, var(--main-color), var(--default));
+}
+
+.loginInput{
+    outline: none;
+}
+
+.glassScreen{
+    background: rgba(255, 255, 255, 0.074);
+  box-shadow: 1px 2px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+}
+
+.loginButton{
+    transition: 450ms;
+}
+
+.loginButton:hover{
+background-color: blue;
+transition: 450ms;
+}
+
+@media screen and (max-width:768px) {
+    .loginInput{
+        width: 100%;
+        height: 40px;
+    }
+
+    .loginButton{
+        font-size: 20px;
+        height: 45px;
+    }
+
+    .appName{
+        font-size: 25px;
+        margin:0;
+    }
+}

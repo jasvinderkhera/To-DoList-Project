@@ -1,0 +1,6 @@
+.taskDetail{
+    width: 450px;
+    border-radius: 20px;
+    max-height: 120px;
+    overflow: hidden;
+}

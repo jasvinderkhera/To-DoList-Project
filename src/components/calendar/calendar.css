@@ -1,0 +1,11 @@
+.react-calendar{
+    height: 50px;
+    width: 80%;
+}
+
+
+@media screen and (max-width:768px){
+    .react-calendar{
+        margin-left: 30px;
+    }
+}

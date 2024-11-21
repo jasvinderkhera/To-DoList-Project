@@ -1,0 +1,27 @@
+
+
+
+
+/* -------------------------Mobile-------------------------------------------------------------- */
+
+
+@media Screen and (max-width: 768px){
+    .settings{
+        margin-right:0 ;
+        margin: 10px 30px;
+    }
+
+    .usernameChange{
+        margin-top: 10px;
+    }
+
+    .usernameChange input{
+        width: 320px;
+    }
+
+    .usernameChange button{
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+}

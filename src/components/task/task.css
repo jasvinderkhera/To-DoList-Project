@@ -1,0 +1,64 @@
+.taskDetail{
+    width: 450px;
+    border-radius: 20px;
+    max-height: 120px;
+    overflow: hidden;
+}
+
+.favourite{
+    height: 32px;
+    width: 32px;
+}
+.mob_edit{
+    display: none;
+}
+
+
+/* ---------------Mobile----------------------------------------- */
+
+@media screen  and (max-width:768px){
+
+    .taskItems{
+        padding: 10px 12px;
+    }
+
+    .taskItem{
+        gap: 10px;
+        width: 100%;
+    }
+
+    .check{
+        height: 14px;
+        width: 16px;
+        border-width: 2px;
+    }
+
+    .innerCheck{
+        height: 14px;
+        width: 14px;
+    }
+
+    .favourite{
+        height: 20px;
+        width: 25px;
+    }
+
+    .edit{
+        display: none;
+    }
+
+    .mob_edit{
+        display: block;
+        width: 40px;
+    }
+
+    .editBtns button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        height: 30px;
+        width: 60px;
+        margin-bottom: 10px;
+    }
+}

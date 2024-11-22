@@ -13,6 +13,8 @@ import calendar from '../assets/images/calendar.png'
 import calendarActive from '../assets/images/calendarActive.png'
 import splashLogo from '../assets/images/splashLogo.png'
 import menu from '../assets/images/menu.png'
+import search from '../assets/images/search.png'
+import searchActive from '../assets/images/searchActive.png'
 
 export const images = {
     logo:logo,
@@ -30,4 +32,6 @@ export const images = {
     calendarActive: calendarActive,
     splashLogo: splashLogo,
     menu: menu,
+    search: search,
+    searchActive: searchActive,
 }

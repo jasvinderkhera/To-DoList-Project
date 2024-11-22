@@ -8,6 +8,7 @@ import NewTask from "../newTask/newTask";
 import Favourites from "../favourites/favourites";
 import { UsernameContext } from "../../context/context";
 import TaskCalendar from "../calendar/calendar";
+import Search from "../search/search";
 
 function Home() {
   const [activeMenu, setActiveMenu] = useState("home");
@@ -78,7 +79,18 @@ function Home() {
                 className="menuImages"
               />
               </div>
-            <div className="menuItem bg-white h-20 w-20 rounded-full"></div>
+            <div  className={
+                activeMenu === "search"
+                  ? "activeMenu h-20 w-20 rounded-full flex flex-col justify-center items-center gap-1"
+                  : "menuItem h-20 w-20 rounded-full flex flex-col justify-center items-center gap-1"
+              }
+              onClick={()=>setActiveMenu('search')}>
+                <img
+                src={activeMenu === "search" ? images.searchActive : images.search}
+                alt=""
+                className="menuImages"
+              />
+              </div>
             <div
               className={
                 activeMenu === "setting"
@@ -142,7 +154,18 @@ function Home() {
                 className="menuImages"
               />
               </div>
-            <div className="menuItem bg-white h-14 w-14 rounded-full"></div>
+              <div  className={
+                activeMenu === "search"
+                  ? "activeMenu h-14 w-14 rounded-full flex flex-col justify-center items-center gap-1"
+                  : "menuItem h-14 w-14 rounded-full flex flex-col justify-center items-center gap-1"
+              }
+              onClick={()=>setActiveMenu('search')}>
+                <img
+                src={activeMenu === "search" ? images.searchActive : images.search}
+                alt=""
+                className="menuImages"
+              />
+              </div>
             <div
               className={
                 activeMenu === "setting"
@@ -173,6 +196,7 @@ function Home() {
         {activeMenu === 'newTask' ? <NewTask /> : ''}
         {activeMenu === 'favourites' ? <Favourites /> : ''}
         {activeMenu === 'calendar' ? <TaskCalendar /> : ''}
+        {activeMenu === 'search' ? <Search /> : ''}
           <div className="logoContainer h-48 w-48 flex justify-center items-center">
             <div className="logo_box h-36 w-36 bg-white rounded-full flex justify-center items-center p-5">
               <img src={images.logo} alt="" className="logoImage" />

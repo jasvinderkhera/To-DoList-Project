@@ -1,0 +1,22 @@
+@media screen and (max-width:768px){
+    .searchContainer{
+        width: 100%;
+        text-align: center;
+    }
+
+    .searchBox{
+        width: 80%;
+        height: 40px;
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .searchContainer ul li{
+        height: 40px;
+        width: 90%;
+        padding: 0;
+    }
+    .searchContainer ul li span{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,12 @@
+@media screen and (max-width:768px){
+    .newTask{
+        margin: 0 20px;
+    }
+    .newTask input{
+        width: 100%;
+        margin: auto;
+    }
+    .newTask h3{
+        margin: 20px auto;
+    }
+}

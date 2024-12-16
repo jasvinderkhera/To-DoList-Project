@@ -42,7 +42,7 @@ function Home() {
       <div className=" outerScreen flex flex-row w-full gap-12">
         <div className="menu basis-1/6 w-74 bg-white border p-4 rounded-3xl relative">
           <div className="outerProfile h-48 w-48 rounded-full flex justify-center items-center">
-            <div className="innerProfile h-36 w-36 rounded-full bg-black ">
+            <div className="innerProfile h-36 w-36 rounded-full bg-black " onClick={()=>setActiveMenu('setting')}>
               <img src={images.user} alt="" />
             </div>
           </div>
